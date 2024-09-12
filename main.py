@@ -7,11 +7,10 @@ OPENAI_API_KEY = 'your-openai-api-key'
 SEC_DOC_LINK_FILE = 'input/sample_8k_links.csv'
 OUTPUT_DIR = 'output'
 
-# Ensure the output directory exists
-
 
 def main():
 
+    # Ensure the output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     total_links = get_link(SEC_DOC_LINK_FILE)
 

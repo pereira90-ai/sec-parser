@@ -1,5 +1,5 @@
-import logging
 import os
+import csv
 
 
 def list_files_in_directory(directory):
@@ -12,7 +12,6 @@ def list_files_in_directory(directory):
 
     return file_paths
 
-import csv
 
 def count_columns_in_csv(file_path):
     counts = []
@@ -36,6 +35,7 @@ def count_columns_in_csv(file_path):
     else:
         return True
 
+
 def check_directory(path):
     red_flag_list = []
     for file in list_files_in_directory(path):
@@ -47,6 +47,7 @@ def check_directory(path):
         with open(path + '/report.txt', 'a') as file:
             file.write('\n' + each)
     return red_flag_list
+
 
 if __name__ == '__main__':
     directory_path = 'output'

@@ -50,7 +50,6 @@ def extract_text_from_url(link):
 
 
 if __name__ == '__main__':
-    # total_links = get_link('input/sample_8k_links.csv')
     url = 'https://www.sec.gov/Archives/edgar/data/320193/000114036123011192/brhc10049413_8k.htm'
     text = extract_text_from_url(url)
     logging.info(f"Result: {text}")  # Log the result instead of using print

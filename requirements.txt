@@ -1,0 +1,6 @@
+pimht
+beautifulsoup4~=4.12.3
+Pandas
+lxml
+requests~=2.32.3
+openai~=1.44.1

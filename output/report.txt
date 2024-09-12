@@ -1,0 +1,16 @@
+
+output\adbe-20230420.csv
+output\afl-20230501.csv
+output\amt-20230524.csv
+output\crm-20230608.csv
+output\d-20230510.csv
+output\d396563d8k.csv
+output\d501487d8k.csv
+output\dp193977_8k.csv
+output\isrg-20230427.csv
+output\jci-20230308.csv
+output\meta-20230531.csv
+output\odfl-20230517.csv
+output\pfe-20230427.csv
+output\tm2316995d1_8k.csv
+output\wfc-20230425.csv

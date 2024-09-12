@@ -18,7 +18,7 @@ def get_link(path):
 
 def extract_text_from_url(link):
     # Define headers to mimic a web browser
-    # Send a GET request to the URL with headers
+    # Send a GET request to the URL with headers. Typical for scrapping text.
     try:
         headers = {
             "Cookie": "ak_bmsc=E072501245094E47A5D00C83F3030696~000000000000000000000000000000"

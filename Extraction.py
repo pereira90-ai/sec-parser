@@ -68,7 +68,7 @@ def generate_response_new(new_data, api_key):
             messages=messages
         )
         logging.info(f"ETA: {time.time() - start_time}")
-        print(time.time() - start_time)
+
         results = response.choices[0].message.content
     except Exception as e:
         logging.error(f"An error occurred: {e}")

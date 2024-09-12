@@ -1,5 +1,8 @@
 import os
 import csv
+import logging
+
+TEST_DIRECTORY = 'output'
 
 
 def list_files_in_directory(directory):
@@ -25,14 +28,13 @@ def count_columns_in_csv(file_path):
     try:
         counts.remove(0)
         counts.remove(1)
-    except:
-        pass
-    print(file_path)
-    print(counts)
+    except Exception as e:
+        logging.info(f"An error occurred while reading the file {file_path}: {e}")
+
     if counts.__len__() > 1:
-        print('BAD')
         return False
     else:
+        logging.info(f"The number of column doesn't equal")
         return True
 
 
@@ -50,5 +52,4 @@ def check_directory(path):
 
 
 if __name__ == '__main__':
-    directory_path = 'output'
-    check_directory(directory_path)
+    check_directory(TEST_DIRECTORY)

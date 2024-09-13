@@ -2,7 +2,7 @@ import os
 import csv
 import logging
 
-TEST_DIRECTORY = 'output'
+
 
 
 def list_files_in_directory(directory):
@@ -52,4 +52,5 @@ def check_directory(path):
 
 
 if __name__ == '__main__':
+    TEST_DIRECTORY = 'output'
     check_directory(TEST_DIRECTORY)

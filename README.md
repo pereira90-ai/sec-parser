@@ -21,3 +21,6 @@ Run the script
 
 > python main.py path-to-your-link
 
+#### Validation
+
+> python check.py

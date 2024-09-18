@@ -42,8 +42,6 @@ def main(input_file=SEC_DOC_LINK_FILE):
             total_links.append(link)
 
 
-
-
 if __name__ == '__main__':
 
     main()

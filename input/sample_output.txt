@@ -7,7 +7,7 @@ Please give me the below information in the json format.
 - Values about "For", "Against", "Abstained", "Broker Non-Vote" from nominees
 - Values about "For", "Against", "Abstained", "Broker Non-Vote" from proposals
 - if proposal Values are not divided like the 3rd condition, give additional field.
-
+IF there exists any missing value never try to fill that.
 So the result must be in this type:
 {
     "company": [
@@ -29,4 +29,5 @@ So the result must be in this type:
     ]
 }
 
-Again, I have to make csv file from this json file. So you have to be accurate and never make additional outputs not like the above sample. IF the value doesn't exist, output N/A
+Again, I have to make csv from this json file.
+So you have to make in the same type, divided into 4 characteristics and the final one, proposal_time, must have only 1 element.

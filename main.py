@@ -34,9 +34,9 @@ def main(input_file=SEC_DOC_LINK_FILE):
         try:
             with open(OUTPUT_DIR + '/' + filename + '.json', 'w') as file:
                 file.write(result)
-                json_to_csv(OUTPUT_DIR + '/' + filename + '.json', OUTPUT_DIR + '/' + filename + '.csv')
+            json_to_csv(OUTPUT_DIR + '/' + filename + '.json', OUTPUT_DIR + '/' + filename + '.csv')
         except Exception as e:
-            logging.info(f"{e} has occured during {filename} process")
+            logging.info(f"{e} has occurred during {filename} process")
 
         if os.path.getsize(OUTPUT_DIR + '/' + filename + '.json') < 1:
             total_links.append(link)

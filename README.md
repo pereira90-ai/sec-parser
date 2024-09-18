@@ -19,7 +19,7 @@ Set openai api key
 
 Run the script
 
-> python main.py path-to-your-link
+> python main.py
 
 #### Validation
 

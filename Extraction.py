@@ -3,9 +3,6 @@ import logging
 import time
 import openai
 
-
-
-
 def get_sample_output():
     with open('input/sample_output.txt', 'r', encoding="utf-8") as file:
         results = file.readlines()
@@ -28,7 +25,7 @@ def generate_response_new(new_data, api_key):
         logging.info(f"Start Time: {start_time}")
         response = openai.chat.completions.create(
             model="gpt-4o-mini",
-            temperature=1,
+            temperature=2,
             messages=messages
         )
         results = response.choices[0].message.content

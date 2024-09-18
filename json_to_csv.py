@@ -3,7 +3,7 @@ import pandas as pd
 
 
 def json_to_csv(input_path, output_path):
-    with open(input_path, 'r') as file:
+    with open(input_path, 'r', encoding='utf-8') as file:
         json_input = json.load(file)
 
 
@@ -14,7 +14,7 @@ def json_to_csv(input_path, output_path):
     proposal_time_df = pd.DataFrame(json_input["proposal_time"])
 
     # Write each section out to the CSV file, separated by blank lines
-    with open(output_path, "w", newline='') as file:
+    with open(output_path, "w", newline='', encoding='utf-8') as file:
         company_info.to_csv(file, index=False)
         file.write("\n")  # Blank line to separate sections
         nominee_df.to_csv(file, index=False)

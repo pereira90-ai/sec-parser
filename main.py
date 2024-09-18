@@ -32,7 +32,7 @@ def main(input_file=SEC_DOC_LINK_FILE):
         for match in matches:
             result += match
         try:
-            with open(OUTPUT_DIR + '/' + filename + '.json', 'w') as file:
+            with open(OUTPUT_DIR + '/' + filename + '.json', 'w', encoding='utf-8') as file:
                 file.write(result)
             json_to_csv(OUTPUT_DIR + '/' + filename + '.json', OUTPUT_DIR + '/' + filename + '.csv')
         except Exception as e:

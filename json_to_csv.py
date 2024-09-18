@@ -22,3 +22,6 @@ def json_to_csv(input_path, output_path):
         proposal_df.to_csv(file, index=False)
         file.write("\n")  # Blank line to separate sections
         proposal_time_df.to_csv(file, index=False)
+
+if __name__ == '__main__':
+    json_to_csv('output/brhc10049413_8k.json', 'output/brhc10049413_8k.csv')

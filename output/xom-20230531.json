@@ -1,0 +1,28 @@
+
+{
+    "company": [
+        {"Exxon Mobil Corporation": "Annual Meeting - 31 May, 2023"}
+    ],
+    "nominees": [
+        {"Nominee": "Michael J. Angelakis", "For": 2587975707, "Against": 95149469, "Abstained": 11384201, "Broker Non-Vote": 64860161},
+        {"Nominee": "Susan K. Avery", "For": 2505077329, "Against": 179632955, "Abstained": 9772829, "Broker Non-Vote": 64860161},
+        {"Nominee": "Angela F. Braly", "For": 2590266361, "Against": 94100769, "Abstained": 10142325, "Broker Non-Vote": 64860161},
+        {"Nominee": "Gregory J. Goff", "For": 2639877914, "Against": 38686483, "Abstained": 15943248, "Broker Non-Vote": 64860161},
+        {"Nominee": "John D. Harris II", "For": 2638407196, "Against": 45087828, "Abstained": 11014328, "Broker Non-Vote": 64860161},
+        {"Nominee": "Kaisa H. Hietala", "For": 2633689634, "Against": 44045067, "Abstained": 16775281, "Broker Non-Vote": 64860161},
+        {"Nominee": "Joseph L. Hooley", "For": 2441699658, "Against": 242842035, "Abstained": 9966548, "Broker Non-Vote": 64860161},
+        {"Nominee": "Steven A. Kandarian", "For": 2577295266, "Against": 106779689, "Abstained": 10432853, "Broker Non-Vote": 64860161},
+        {"Nominee": "Alexander A. Karsner", "For": 2589852813, "Against": 94590674, "Abstained": 10065895, "Broker Non-Vote": 64860161},
+        {"Nominee": "Lawrence W. Kellner", "For": 2648325160, "Against": 35958718, "Abstained": 10223876, "Broker Non-Vote": 64860161},
+        {"Nominee": "Jeffrey W. Ubben", "For": 2611172785, "Against": 73101922, "Abstained": 10236640, "Broker Non-Vote": 64860161},
+        {"Nominee": "Darren W. Woods", "For": 2488149233, "Against": 194882302, "Abstained": 11479847, "Broker Non-Vote": 64860161}
+    ],
+    "proposals": [
+        {"Proposal": "Ratification of Independent Auditors", "For": 3258039761, "Against": 89788338, "Abstained": 11533621, "Broker Non-Vote": 0},
+        {"Proposal": "Advisory Vote to Approve Executive Compensation", "For": 2420413653, "Against": 252837657, "Abstained": 21259179, "Broker Non-Vote": 664860161},
+        {"Proposal": "Frequency of Advisory Vote on Executive Compensation", "For": 2596422541, "Against": 15162464, "Abstained": 122602789, "Broker Non-Vote": 664860161}
+    ],
+    "proposal_time": [
+        {"Proposal": "Frequency of Advisory Vote on Executive Compensation", "One Year": 2596422541, "Two Years": 15162464, "Three Years": 70299529, "Abstain": 122602789, "Broker Non-Votes": 664860161}
+    ]
+}

@@ -1,0 +1,43 @@
+
+{
+    "company": [
+        {"Meta Platforms, Inc.": "Annual Meeting - 31 May, 2023"}
+    ],
+    "nominees": [
+        {"Nominee": "Peggy Alford", "For": 4397201474, "Against": 638028279, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Marc L. Andreessen", "For": 4562109965, "Against": 473119788, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Andrew W. Houston", "For": 4575049246, "Against": 460180507, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Nancy Killefer", "For": 4988759917, "Against": 46469836, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Robert M. Kimmitt", "For": 4905696922, "Against": 129532831, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Sheryl K. Sandberg", "For": 4995842498, "Against": 39387255, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Tracey T. Travis", "For": 4886849193, "Against": 148380560, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Tony Xu", "For": 4588903919, "Against": 446325834, "Abstained": 0, "Broker Non-Vote": 223805267},
+        {"Nominee": "Mark Zuckerberg", "For": 4628709257, "Against": 406520496, "Abstained": 0, "Broker Non-Vote": 223805267}
+    ],
+    "proposals": [
+        {"Proposal": "Ratification of Appointment of Independent Registered Public Accounting Firm",
+         "For": 5176904631, "Against": 78164976, "Abstained": 3965413, "Broker Non-Vote": 0},
+        {"Proposal": "Shareholder Proposal Regarding Government Takedown Requests",
+         "For": 21161618, "Against": 4997744459, "Abstained": 16393676, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Dual Class Capital Structure",
+         "For": 1406841369, "Against": 3621542306, "Abstained": 6846078, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Human Rights Impact Assessment of Targeted Advertising",
+         "For": 845051262, "Against": 4119907712, "Abstained": 70270779, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Report on Lobbying Disclosures",
+         "For": 731006998, "Against": 4289286570, "Abstained": 14936185, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Report on Allegations of Political Entanglement and Content Management Biases in India",
+         "For": 228827965, "Against": 4738909941, "Abstained": 67491847, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Report on Framework to Assess Company Lobbying Alignment with Climate Goals",
+         "For": 492189469, "Against": 4527617352, "Abstained": 15422932, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Report on Reproductive Rights and Data Privacy",
+         "For": 481236650, "Against": 4527112583, "Abstained": 26880520, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Report on Enforcement of Community Standards and User Content",
+         "For": 359502758, "Against": 4658516757, "Abstained": 17210238, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Report on Child Safety Impacts and Actual Harm Reduction to Children",
+         "For": 817020915, "Against": 4202589505, "Abstained": 15619333, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Report on Pay Calibration to Externalized Costs",
+         "For": 359570618, "Against": 4662026384, "Abstained": 13632751, "Broker Non-Vote": 223805267},
+        {"Proposal": "Shareholder Proposal Regarding Performance Review of the Audit & Risk Oversight Committee",
+         "For": 333995525, "Against": 4687312553, "Abstained": 13921675, "Broker Non-Vote": 223805267}
+    ]
+}

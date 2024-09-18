@@ -1,3 +1,4 @@
+import argparse
 from get_text_from_link import get_link, extract_text_from_url
 from Extraction import generate_response_new
 import re
@@ -8,11 +9,11 @@ SEC_DOC_LINK_FILE = 'input/sample_8k_links.csv'
 OUTPUT_DIR = 'output'
 
 
-def main():
+def main(input_file=SEC_DOC_LINK_FILE):
 
     # Ensure the output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    total_links = get_link(SEC_DOC_LINK_FILE)
+    total_links = get_link(input_file)
 
     for link in total_links:
         filename = link.split('/')[-1].split('.')[0]
@@ -32,4 +33,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description="Process a given path.")
+    parser.add_argument('input_path', type=str, help='The path to your input link or file')
+
+    args = parser.parse_args()
+
+    main(args.input_path)

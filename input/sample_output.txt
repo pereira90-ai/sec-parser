@@ -8,6 +8,7 @@ Please give me the below information in the json format.
 - Values about "For", "Against", "Abstained", "Broker Non-Vote" from proposals
 - if proposal Values are not divided like the 3rd condition, give additional field.
 IF there exists any missing value never try to fill that.
+The column names from the source may be different but you have to deal with that if the meaning equals.
 So the result must be in this type:
 {
     "company": [

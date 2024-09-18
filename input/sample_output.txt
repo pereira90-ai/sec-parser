@@ -1,60 +1,32 @@
 
-This is the sec-8k document.
+The above is the sec-8k document.
 
 From the Item 5.07 section,
 Please give me the below information in the json format.
-- Company name of registrant
-- meeting type and date
-- Values about "For", "Against", "Abstained", "Broker Non-Vote" from nominees as well as from proposals
+- Company name of registrant, meeting type and date
+- Values about "For", "Against", "Abstained", "Broker Non-Vote" from nominees
+- Values about "For", "Against", "Abstained", "Broker Non-Vote" from proposals
+- if proposal Values are not divided like the 3rd condition, give additional field.
 
-Maybe in this type:
+So the result must be in this type:
 {
-  "Company Name": "Amazon.com, Inc",
-  "Nominee": {
-    "dfaefdfe": {
-      "For": 123,
-      "Against": 234,
-      "Abstained": 123,
-      "Broker Non-Vote": 234,
-    },"asdfdf": {
-      "For": 123,
-      "Against": 234,
-      "Abstained": 123,
-      "Broker Non-Vote": 234,
-    },"Jeff": {
-      "For": 123,
-      "Against": 234,
-      "Abstained": 123,
-      "Broker Non-Vote": 234,
-    },
-  },
-  "Proposal": {
-    "The appointment of Ernst & Young LLP as our independent auditors for the fiscal year ending December 31, 2023 was ra": {
-      "For": 123,
-      "Against": 234,
-      "Abstained": 123,
-      "Broker Non-Vote": 234,
-    },
-    "The compensation of our named executive officers was approved in an advisory vot": {
-      "For": 123,
-      "Against": 234,
-      "Abstained": 123,
-      "Broker Non-Vote": 234,
-    },
-    "The Company's 1997 Stock Incentive Plan, as amended and restated, was reapproved for purposes of French tax law": {
-      "For": 123,
-      "Against": 234,
-      "Abstained": 123,
-      "Broker Non-Vote": 234,
-    },
-  },
-  "Proposal": {
-    "The Company's 1997 Stock Incentive Plan, as amended and restated, was reapproved for purposes of French tax law": {
-      "One Year": 7270477259,
-      "Two Years": 11671932,
-      "Three Years": 67529229,
-      "Abstained": 18731426,
-      "Broker Non-Vote": 1298652951,
-    },
-  },
+    "company": [
+        {"Amazon.com, Inc.": "Annual Meeting - 24 May, 2024"}
+    ],
+    "nominees": [
+        {"Nominee": "Heidi K. Kunz", "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911},
+        {"Nominee": "Susan H. Rataj", "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911}
+    ],
+    "proposals": [
+        {"Proposal": "Non-binding advisory vote to approve the compensation of the Company's named executive officers",
+         "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911},
+        {"Proposal": "Ratification of the Audit and Finance Committee's appointment of PricewaterhouseCoopers LLP",
+         "For": 199252742, "Against": 49152480, "Abstained": 378386, "Broker Non-Vote": 19452911}
+    ],
+    "proposal_time": [
+        {"Proposal": "Ratification of the Audit and Finance Committee's appointment of PricewaterhouseCoopers LLP",
+         "One Year": 199252742, "Two Years": 49152480, "Three Years": 378386, "Abstain": 19452911, "Broker Non-Votes": 19452911}
+    ]
 }
+
+Again, I have to make csv file from this json file. So you have to be accurate and never make additional outputs not like the above sample.

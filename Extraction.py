@@ -4,13 +4,6 @@ import time
 import openai
 
 
-def get_text():
-    with open('input/sample_input.txt', 'r', encoding="utf-8") as input_file:
-        results = input_file.readlines()
-        final_text = ''
-        for line in results:
-            final_text += line + '\n'
-    return final_text
 
 
 def get_sample_output():

@@ -31,4 +31,5 @@ So the result must be in this type:
 }
 
 Again, I have to make csv from this json file.
-So you have to make in the same type, divided into 4 characteristics and the final one, proposal_time, must have only 1 element.
+So you have to make in the same type, divided into 4 characteristics
+And the final one, proposal_time, must have only 1 element and never be included in the above element, proposals.

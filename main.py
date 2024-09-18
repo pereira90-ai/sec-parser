@@ -43,6 +43,5 @@ def main(input_file=SEC_DOC_LINK_FILE):
 
 
 if __name__ == '__main__':
-
     main()
 

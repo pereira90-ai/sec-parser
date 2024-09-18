@@ -29,4 +29,4 @@ So the result must be in this type:
     ]
 }
 
-Again, I have to make csv file from this json file. So you have to be accurate and never make additional outputs not like the above sample.
+Again, I have to make csv file from this json file. So you have to be accurate and never make additional outputs not like the above sample. IF the value doesn't exist, output N/A

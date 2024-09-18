@@ -1,0 +1,60 @@
+
+This is the sec-8k document.
+
+From the Item 5.07 section,
+Please give me the below information in the json format.
+- Company name of registrant
+- meeting type and date
+- Values about "For", "Against", "Abstained", "Broker Non-Vote" from nominees as well as from proposals
+
+Maybe in this type:
+{
+  "Company Name": "Amazon.com, Inc",
+  "Nominee": {
+    "dfaefdfe": {
+      "For": 123,
+      "Against": 234,
+      "Abstained": 123,
+      "Broker Non-Vote": 234,
+    },"asdfdf": {
+      "For": 123,
+      "Against": 234,
+      "Abstained": 123,
+      "Broker Non-Vote": 234,
+    },"Jeff": {
+      "For": 123,
+      "Against": 234,
+      "Abstained": 123,
+      "Broker Non-Vote": 234,
+    },
+  },
+  "Proposal": {
+    "The appointment of Ernst & Young LLP as our independent auditors for the fiscal year ending December 31, 2023 was ra": {
+      "For": 123,
+      "Against": 234,
+      "Abstained": 123,
+      "Broker Non-Vote": 234,
+    },
+    "The compensation of our named executive officers was approved in an advisory vot": {
+      "For": 123,
+      "Against": 234,
+      "Abstained": 123,
+      "Broker Non-Vote": 234,
+    },
+    "The Company's 1997 Stock Incentive Plan, as amended and restated, was reapproved for purposes of French tax law": {
+      "For": 123,
+      "Against": 234,
+      "Abstained": 123,
+      "Broker Non-Vote": 234,
+    },
+  },
+  "Proposal": {
+    "The Company's 1997 Stock Incentive Plan, as amended and restated, was reapproved for purposes of French tax law": {
+      "One Year": 7270477259,
+      "Two Years": 11671932,
+      "Three Years": 67529229,
+      "Abstained": 18731426,
+      "Broker Non-Vote": 1298652951,
+    },
+  },
+}

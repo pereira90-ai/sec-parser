@@ -20,14 +20,14 @@ def main():
 
         result = generate_response_new(text, OPENAI_API_KEY)
         # The result is natual language that includes the key information so Extract those using Regex.
-        matches = re.findall(r"```(.*?)```", result, re.DOTALL)
+        matches = re.findall(r"```json(.*?)```", result, re.DOTALL)
 
-        csv = ''
+        result = ''
         for match in matches:
-            csv += match
-        with open('output/' + filename + '.csv', 'w') as file:
-            file.write(csv)
-        if os.path.getsize('output/' + filename + '.csv') < 1:
+            result += match
+        with open(OUTPUT_DIR + '/' + filename + '.json', 'w') as file:
+            file.write(result)
+        if os.path.getsize(OUTPUT_DIR + '/' + filename + '.json') < 1:
             total_links.append(link)
 
 

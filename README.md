@@ -15,7 +15,7 @@ Set up environment
 > pip install -r requirements.txt
 
 Set openai api key
-> openai_ = 'your-openai-key'
+> OPENAI_API_KEY = 'your-openai-key'
 
 Run the script
 

@@ -7,8 +7,8 @@ Please give me the below information in the json format.
 - Values about "For", "Against", "Abstained", "Broker Non-Vote" from nominees
 - Values about "For", "Against", "Abstained", "Broker Non-Vote" from proposals
 - if proposal Values are not divided like the 3rd condition, give additional field.
-IF there exists any missing value never try to fill that but you have to include all information from the text.
-The column names from the source may be different but you have to deal with that if the meaning equals.
+You hve to include all the information from the text without generating new one. But you often drop "Broker Non-Vote" values.
+The column names may not be perfectly identical but you have to deal with that if the meaning equals.
 So the result must be in this type:
 {
     "company": [

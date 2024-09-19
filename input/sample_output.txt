@@ -33,3 +33,19 @@ So the result must be in this type:
 Again, I have to make csv from this json file.
 So you have to make in the same type, divided into 4 characteristics
 And the final one, proposal_time, must have only 1 element and never be included in the above element, proposals.
+This means if there is no odd proposal you mustn't add fourth field of the json file So it would looks like:
+{
+    "company": [
+        {"Amazon.com, Inc.": "Annual Meeting - 24 May, 2024"}
+    ],
+    "nominees": [
+        {"Nominee": "Heidi K. Kunz", "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911},
+        {"Nominee": "Susan H. Rataj", "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911}
+    ],
+    "proposals": [
+        {"Proposal": "Non-binding advisory vote to approve the compensation of the Company's named executive officers",
+         "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911},
+        {"Proposal": "Ratification of the Audit and Finance Committee's appointment of PricewaterhouseCoopers LLP",
+         "For": 199252742, "Against": 49152480, "Abstained": 378386, "Broker Non-Vote": 19452911}
+    ],
+}

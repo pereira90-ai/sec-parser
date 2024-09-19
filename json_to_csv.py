@@ -8,7 +8,6 @@ def json_to_csv(input_path, output_path):
     with open(input_path, 'r', encoding='utf-8') as file:
         json_input = json.load(file)
 
-
     # Load each section into its own DataFrame
     company_info = pd.DataFrame(json_input["company"])
     nominee_df = pd.DataFrame(json_input["nominees"])

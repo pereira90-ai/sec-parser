@@ -25,6 +25,7 @@ def generate_response_new(new_data, api_key):
         logging.info(f"Start Time: {start_time}")
         response = openai.chat.completions.create(
             model="gpt-4o-mini",
+            temperature=1,
             messages=messages
         )
         results = response.choices[0].message.content

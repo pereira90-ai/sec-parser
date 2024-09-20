@@ -4,11 +4,11 @@ The above is the sec-8k document.
 From the Item 5.07 section,
 Please give me the below information in the json format.
 - Company name of registrant, meeting type and date
-- Values about "For", "Against", "Abstained", "Broker Non-Vote" from nominees
-- Values about "For", "Against", "Abstained", "Broker Non-Vote" from proposals
-- if proposal Values are not divided like the 3rd condition, give additional field.
-You hve to include all the information from the text without generating new one. But you often drop "Broker Non-Vote" values.
-The column names may not be perfectly identical but you have to deal with that if the meaning equals.
+- Values according to "For", "Against", "Abstained", "Broker Non-Vote" from nominees, If another column exists, include that. it could be Withheld like thing
+- Values according to "For", "Against", "Abstained", "Broker Non-Vote" from proposals. Never generate not given values.
+- if proposal Values are not divided like the 3rd condition, give that proposal to additional field. Never generate not given values.
+You have to include all the information from the text without generating new one. But you often drop "Broker Non-Vote" values.
+The column names may not be perfectly identical but you have to recognize as 1 if the meaning is almost similar.
 So the result must be in this type:
 {
     "company": [
@@ -32,7 +32,7 @@ So the result must be in this type:
 
 Again, I have to make csv from this json file.
 So you have to make in the same type, divided into 4 characteristics
-And the final one, proposal_time, must have only 1 element and never be included in the above element, proposals.
+And the final one, proposal_time, must have no more than 1 element and never be included in the above element, proposals.
 This means if there is no odd proposal you mustn't add fourth field of the json file So it would looks like:
 {
     "company": [

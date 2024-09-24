@@ -5,10 +5,8 @@ From the Item 5.07 section,
 Please give me the below information in the json format.
 - Company name of registrant, meeting type and date
 - Values according to "For", "Against", "Abstained", "Broker Non-Vote" from nominees, If another column exists, include that. it could be Withheld like thing
-- Values according to "For", "Against", "Abstained", "Broker Non-Vote" from proposals. Never generate not given values.
-- if proposal Values are not divided like the 3rd condition, give that proposal to additional field. Never generate not given values.
-You have to include all the information from the text without generating new one. But you often drop "Broker Non-Vote" values.
-The column names may not be perfectly identical but you have to recognize as 1 if the meaning is almost similar.
+- All the values about the proposals but not for nominees.
+The column names may not be identical but you have to treat them as the same column if the meanings are similar.
 So the result must be in this type:
 {
     "company": [
@@ -22,30 +20,10 @@ So the result must be in this type:
         {"Proposal": "Non-binding advisory vote to approve the compensation of the Company's named executive officers",
          "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911},
         {"Proposal": "Ratification of the Audit and Finance Committee's appointment of PricewaterhouseCoopers LLP",
-         "For": 199252742, "Against": 49152480, "Abstained": 378386, "Broker Non-Vote": 19452911}
-    ],
-    "proposal_time": [
+         "One Year": 199252742, "Two Years": 49152480, "Three Years": 378386, "Abstain": 19452911, "Broker Non-Vote": 19452911}
         {"Proposal": "Ratification of the Audit and Finance Committee's appointment of PricewaterhouseCoopers LLP",
-         "One Year": 199252742, "Two Years": 49152480, "Three Years": 378386, "Abstain": 19452911, "Broker Non-Votes": 19452911}
-    ]
+         "For": 199252742, "Against": 49152480, "Abstained": 378386, "Broker Non-Vote": 19452911}
+        ]
 }
 
-Again, I have to make csv from this json file.
-So you have to make in the same type, divided into 4 characteristics
-And the final one, proposal_time, must have no more than 1 element and never be included in the above element, proposals.
-This means if there is no odd proposal you mustn't add fourth field of the json file So it would looks like:
-{
-    "company": [
-        {"Amazon.com, Inc.": "Annual Meeting - 24 May, 2024"}
-    ],
-    "nominees": [
-        {"Nominee": "Heidi K. Kunz", "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911},
-        {"Nominee": "Susan H. Rataj", "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911}
-    ],
-    "proposals": [
-        {"Proposal": "Non-binding advisory vote to approve the compensation of the Company's named executive officers",
-         "For": 226926105, "Against": 21488352, "Abstained": 369151, "Broker Non-Vote": 19452911},
-        {"Proposal": "Ratification of the Audit and Finance Committee's appointment of PricewaterhouseCoopers LLP",
-         "For": 199252742, "Against": 49152480, "Abstained": 378386, "Broker Non-Vote": 19452911}
-    ],
-}
+Again, I have to make csv from this json file. You have to include all information.

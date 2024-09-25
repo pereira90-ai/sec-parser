@@ -43,7 +43,7 @@ def extract_text_from_url(link):
         # Parse the webpage content if the request was successful
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
-        data = soup.get_text(strip=True)
+        data = soup.get_text()
         return data
     else:
         return f"Failed to retrieve the webpage. Status code: {response.status_code}"

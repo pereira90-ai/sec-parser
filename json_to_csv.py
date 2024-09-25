@@ -16,6 +16,7 @@ def json_to_csv(input_path, output_path):
     proposal_df = pd.DataFrame(json_input["proposals"])
 
     proposal_df.insert(0, 'No', list(range(2, proposal_df.__len__() + 2)))
+    class_b_df = pd.DataFrame(json_input["class-b"])
     # Write each section out to the CSV file, separated by blank lines
     with open(output_path, "w", newline='') as file:
         company_info.to_csv(file, index=False)
@@ -24,6 +25,9 @@ def json_to_csv(input_path, output_path):
         file.write("\n")  # Blank line to separate sections
         proposal_df.to_csv(file, index=False)
         file.write("\n")  # Blank line to separate sections
+        class_b_df.to_csv(file, index=False)
+        file.write('\n')
+
 
 
 if __name__ == '__main__':

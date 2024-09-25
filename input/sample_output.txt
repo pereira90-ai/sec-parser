@@ -4,7 +4,7 @@ The above is the sec-8k document.
 From the Item 5.07 section,
 Please give me the below information in the json format.
 - Company name of registrant, meeting type and date
-- Values according to "For", "Against", "Abstained", "Broker Non-Vote" from nominees, If another column exists, include that. it could be Withheld like thing
+- Values according to "For", "Against", "Abstained", "Broker Non-Vote" from nominees or directors, If another column exists, include that. it could be Withheld like thing
 - All the values about the proposals but not for nominees.
 The column names may not be identical but you have to treat them as the same column if the meanings are similar. For example you have to deal both "abstained" and "abstain" into "Abstained"
 So the result must be in this type:
